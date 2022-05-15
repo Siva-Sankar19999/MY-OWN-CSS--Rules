@@ -87,6 +87,15 @@ we can set different background color using background-image properties like bel
 
     we can change order of flex items forward and backward by using order 
 
+    flex-grow: 0 , 1 , 2;
+
+    /* when they are less flex items in row and we have more space to take over and -> we can increase the size of those flex items by using flex-grow: 0 , 1,2; */
+    /* we have to specify to individual items like we have already  applied in  align-self,order properties */
+
+
+
+    flex-shrink
+
     
     
 
@@ -97,6 +106,7 @@ we can set different background color using background-image properties like bel
     flex-direction: ;
     justify-content: ;
     align-items: ;
+    order: ;
 
     flex-wrap: ;
     flex-flow: ;
@@ -105,7 +115,7 @@ we can set different background color using background-image properties like bel
     flex-grow: ;
     flex-basis: ;
     flex-shrink: ;
-    order: ;
+   
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
