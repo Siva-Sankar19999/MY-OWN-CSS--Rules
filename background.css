@@ -27,12 +27,13 @@
 
 
    /* Important box property for height and width ..height and width only applies to content only */
+   /* It will not allow padding and border to add extra height and width other than specified */ 
 
    box-sizing: border-box content-box (default property);
 
 
 
-    /* content in a box*/
+    /* content in a box (for stopping over flow)*/
 
     overflow:hidden;
     overflow:show;
