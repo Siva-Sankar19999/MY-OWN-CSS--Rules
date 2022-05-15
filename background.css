@@ -1,0 +1,71 @@
+
+/* To remove extra space */ 
+
+.body{
+    margin:0px;   
+}
+
+
+/*standard background-image properties*/
+
+.background{
+    background-image:url("");
+    background-size:cover;
+    height:100vh;
+}
+
+
+/* Standard box properties */
+
+.border{
+  
+    height: 150px ;
+    weight: 150px ;
+    border:2px solid green;
+    padding: ;
+    margin: ;
+
+
+   /* Important box property for height and width ..height and width only applies to content only */
+
+   box-sizing: border-box content-box (default property);
+
+
+
+    /* content in a box*/
+
+    overflow:hidden;
+    overflow:show;
+    overflow:auto;
+
+
+
+    min-height:;
+    min-width:;
+    max-height: ;
+    max-width: ;
+
+
+}
+
+
+/* Flex properties */
+
+.display{
+
+    display:flex;
+    flex-direction:flex-row;
+    justify-content:center flex-start flex-end;
+    align-items: center;
+    self-align:
+
+}
+
+
+
+
+
+
+
+
+
