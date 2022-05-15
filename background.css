@@ -71,12 +71,26 @@ we can set different background color using background-image properties like bel
 
 .flex{
 
-    display:flex;  /* in bootstrap d-flex */
-    flex-direction:flex-row; /* in bootstrap flex-row,  main axis */
+    display:flex;             /* in bootstrap d-flex */
+    flex-direction:row;      /* in bootstrap flex-row,  main axis */
     justify-content:flex-start center  flex-end space-between space-around ; /* Alignment of items in main axis direction */
     align-items: stretch(default property) flex-start center flex-end;
     /* when we choose flex-direction. Items will stretch in oppposite direction i.e; cross axis and stretch will controlled by property align-items */
-    flex-wrap :nowrap (default value) wrap ; /* we have to put */ flex-wrap : wrap ; /*otherwise items will forcefully fill in one row when we choose flex-direction:row; */
+    flex-wrap :nowrap (default value) wrap ;       /* we have to put */ flex-wrap : wrap ; /*otherwise items will forcefully fill in one row when we choose flex-direction:row; */
+    
+
+
+    align-self: stretch auto flex-end flex-start center;
+    /* we can move flex items individually in cross direction */ attribute auto means it inherit parent property i.e; align-items 
+    
+    order: -1 0 1 ; 
+
+    we can change order of flex items forward and backward by using order 
+
+    
+    
+
+
 
 
     display: ;
@@ -87,7 +101,7 @@ we can set different background color using background-image properties like bel
     flex-wrap: ;
     flex-flow: ;
     align-content: ;
-    align-self; ;
+    align-self: ;
     flex-grow: ;
     flex-basis: ;
     flex-shrink: ;
