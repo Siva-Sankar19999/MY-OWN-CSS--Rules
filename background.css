@@ -1,10 +1,12 @@
 
+------------------------------------------------------------------------------------------------------------------
 /* To remove extra space */ 
 
 .body{
     margin:0px;   
 }
 
+------------------------------------------------------------------------------------------------------------------
 
 /*standard background-image properties*/
 
@@ -14,6 +16,18 @@
     min-height:100 vh;
 }
 
+/* Extra background-image properties */
+
+we can set different background color using background-image properties like below 
+
+.background{
+
+    background-image: linear-gradient(to right, #659ebc, #2aaba8, #2aaba8);
+    min-height:100vh;
+
+}
+
+------------------------------------------------------------------------------------------------------------------
 
 /* Standard box properties */
 
@@ -51,11 +65,19 @@
 
 }
 
-
+------------------------------------------------------------------------------------------------------------------
 
 /* very important concept Flex properties */
 
 .flex{
+
+    display:flex;  /* in bootstrap d-flex */
+    flex-direction:flex-row; /* in bootstrap flex-row,  main axis */
+    justify-content:flex-start center  flex-end space-between space-around ; /* Alignment of items in main axis direction */
+    align-items: stretch(default property) flex-start center flex-end;
+    /* when we choose flex-direction. Items will stretch in oppposite direction i.e; cross axis and stretch will controlled by property align-items */
+    flex-wrap :nowrap (default value) wrap ; /* we have to put */ flex-wrap : wrap ; /*otherwise items will forcefully fill in one row when we choose flex-direction:row; */
+
 
     display: ;
     flex-direction: ;
@@ -70,30 +92,9 @@
     flex-basis: ;
     flex-shrink: ;
     order: ;
-
-
-
-
-    display:flex;  /* in bootstrap d-flex */
-    flex-direction:flex-row; /* in bootstrap flex-row,  main axis */
-    justify-content:flex-start center  flex-end space-between space-around ; /* Alignment direction in main axis */
-    align-items: stretch(default property) flex-start center flex-end;
-    
-    /* when we choose flex-direction. Items will stretch in oppposite direction i.e; cross axis and stretch will controlled by property align-items */
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
+------------------------------------------------------------------------------------------------------------------
 /* Display concept */
 
 .display{
@@ -103,7 +104,7 @@
     display:none;
 }
 
-
+------------------------------------------------------------------------------------------------------------------
 
 
 
