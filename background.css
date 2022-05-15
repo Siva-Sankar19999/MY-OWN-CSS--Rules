@@ -81,7 +81,7 @@ we can set different background color using background-image properties like bel
 
 
     align-self: stretch auto flex-end flex-start center;
-    /* we can move flex items individually in cross direction */ attribute auto means it inherit parent property i.e; align-items 
+    /* we can move flex items individually in cross direction ..... attribute auto means it inherit parent property i.e; align-items */
     
     order: -1 0 1 ; 
 
@@ -124,8 +124,79 @@ we can set different background color using background-image properties like bel
     border-left:8px solid green;
 }
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* Media Queries */
+
+@media media-type and (media-feature-expression)
+  {
+
+  }
+
+1.media-type: screen ,tv , print ,all
+    a)for all devices we can use all
+
+2. media-feature expression
+   {
+      width , min-width, max-width
+      height, min-height, max-height
+      orientation
+      aspect-ratio
+      resolution
+    }   
+
+e.g: @media print{
+    .heading{
+        color:blue;
+    }
+  }
+
+ e.g: @media all{
+     .heading{
+         color:blue;
+     }
+    } 
 
 
+ 
 
+ @media (width:200px)
+     {
 
+     }
+ /* here width:200px means width==200px then condition statisfies */
+ /* here min-width:200px means width>=200px then condition statisfies */
 
+@media (orientation:landscape)
+  {|
+  
+  }
+
+/* we can write statements like this */
+@media (orientation:landscape) and (min-width:600px)
+  {
+
+  }
+
+@media screen and (mediafeature-expression)
+  {
+
+  }
+/* we can write like this also */
+
+@media screen and (min-width:600px)
+  {
+
+  }
+
+  we can use and,not comma operator
+  when we use not operator we have to use media type compulsory
+
+  @media not screen and (min-width:400px)
+    {
+
+    }
+
+    @media  (min-width:400px) ,(orientation:landscape)
+    {
+        
+    }
