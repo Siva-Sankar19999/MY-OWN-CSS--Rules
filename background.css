@@ -11,7 +11,7 @@
 .background{
     background-image:url("");
     background-size:cover;
-    height:100vh;
+    min-height:100 vh;
 }
 
 
@@ -36,8 +36,10 @@
     /* content in a box (for stopping over flow)*/
 
     overflow:hidden;
-    overflow:show;
+    overflow:visible;
     overflow:auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
 
 
 
@@ -50,16 +52,55 @@
 }
 
 
-/* Flex properties */
+
+/* very important concept Flex properties */
+
+.flex{
+
+    display: ;
+    flex-direction: ;
+    justify-content: ;
+    align-items: ;
+
+    flex-wrap: ;
+    flex-flow: ;
+    align-content: ;
+    align-self; ;
+    flex-grow: ;
+    flex-basis: ;
+    flex-shrink: ;
+    order: ;
+
+
+
+
+    display:flex;  /* in bootstrap d-flex */
+    flex-direction:flex-row; /* in bootstrap flex-row,  main axis */
+    justify-content:flex-start center  flex-end space-between space-around ; /* Alignment direction in main axis */
+    align-items: stretch(default property) flex-start center flex-end;
+    
+    /* when we choose flex-direction. Items will stretch in oppposite direction i.e; cross axis and stretch will controlled by property align-items */
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Display concept */
 
 .display{
-
     display:flex;
-    flex-direction:flex-row;
-    justify-content:center flex-start flex-end;
-    align-items: center;
-    self-align:
-
+    display:inline-flex;
+    display:grid;
+    display:none;
 }
 
 
