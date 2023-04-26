@@ -1,0 +1,51 @@
+/* very important concept Flex properties */
+
+.flex{
+
+    display:flex;             /* in bootstrap d-flex */
+    flex-direction:row;      /* in bootstrap flex-row,  main axis */
+    justify-content:flex-start center  flex-end space-between space-around ; /* Alignment of items in main axis direction */
+    align-items: stretch(default property) flex-start center flex-end;
+    /* when we choose flex-direction. Items will stretch in oppposite direction i.e; cross axis and stretch will controlled by property align-items */
+    flex-wrap :nowrap (default value) wrap ;       /* we have to put */ flex-wrap : wrap ; /*otherwise items will forcefully fill in one row when we choose flex-direction:row; */
+    
+
+
+    align-self: stretch auto flex-end flex-start center;
+    /* we can move flex items individually in cross direction ..... attribute auto means it inherit parent property i.e; align-items */
+    
+    order: -1 0 1 ; 
+
+    we can change order of flex items forward and backward by using order 
+
+    flex-grow: 0 (default value) , 1 , 2;
+
+    /* when they are less flex items in row and we have more space to take over and -> we can increase the size of those flex items by using flex-grow: 0 , 1,2; */
+    /* we have to specify to individual items like we have already  applied in  align-self,order properties */
+
+
+
+    flex-shrink : 0, 1(default value);
+
+    when we do flex-shrink :0;
+    we are saying not to shrink when there is no space for them...
+    and we have to apply them individual items....saying not to shrink....
+
+    
+    
+
+    display: ;
+    flex-direction: ;
+    justify-content: ;
+    align-items: ;
+    order: ;
+
+    flex-wrap: ;
+    flex-flow: ;
+    align-content: ;
+    align-self: ;
+    flex-grow: ;
+    flex-basis: ;
+    flex-shrink: ;
+   
+}
