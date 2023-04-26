@@ -1,1 +1,30 @@
+TRANSFORM,TRANSITION,ANIMATION
 
+->Transform
+  translate(),scale(),rotate(),skew()
+->Transition
+  change over time
+->Animation 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+->Transform
+  translate(30px,30px) : we can move the element in x-axis direction and y-axis direction     eg: trasnform:translateX(30px);  
+  translateX(30px)     : 1.we can move the element in x-axis direction to 30px.
+                         2.we can give negative values also.
+                         3.If we give transform:translateX(50%) and element width is 150px and it will move 75px along x-axis.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------             
+->Transform
+  scale(1.2,1.2) : we can increase or decrease the size of element in x-axis and y-axis direction.
+  scaleX(0.5)    : we are decreasing the size of element in x-axis direction to half.
+  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+->Transform
+  rotate(20deg)   : we can rotate the element. and we can use negative values also.
+  rotateX(20deg)  : we cannot see anything in rotateX(20deg) and best to use is * rotate(20 deg) for rotating the element.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+->Transform
+  skew(20deg,20deg) : we can make the element look like parallel box (if it is in box shape) and it is not used much.
+  skewX(20deg)      : we are making the element to skew in x-axis direction.
+  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+->Transition  
