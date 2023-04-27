@@ -28,3 +28,43 @@ TRANSFORM,TRANSITION,ANIMATION
   
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
 ->Transition  
+  transition-property
+  transition-duration
+  transition-delay
+  
+  when we apply hover affect to any element it state changes. we can control that state change using transition.
+  we have to target the element attribute using transition-property.
+  
+  button{
+    background-color:red;  
+  }
+  
+  button:hover{
+    background-color:pink;
+  }
+  
+  first target the element attribute like below
+
+  button{
+    background-color:red; 
+ ** transition-property:background-color;
+    transition-duration:4s;
+  }
+  
+  button:hover{
+    background-color:pink;
+  }  
+  
+  If there are more than one property in hover we can write comma separated values or use  * all eg:transition-property:all;
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
