@@ -3,7 +3,7 @@ TRANSFORM,TRANSITION,ANIMATION
 ->Transform
   translate(),scale(),rotate(),skew()
 ->Transition
-  change over time
+  transition-property,transition-duration,transition-delay,transition timing functions
 ->Animation 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
@@ -55,9 +55,59 @@ TRANSFORM,TRANSITION,ANIMATION
     background-color:pink;
   }  
   
-  If there are more than one property in hover we can write comma separated values or use  * all eg:transition-property:all;
+  If there are more than one property in hover we can write comma separated values in transition-property or use  * all eg:transition-property:all;
   
-   
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+->Transiton
+  transition-timing-funegction
+  ->Transition timimg functions tells how the transiton takes place and default value is ease i.e; ease means slow start and fast end
+    transition-timing-function:ease,linear,ease-in,ease-out.we can use any value.
+    eg: transition-timing-function:linear;
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+->Animation
+ ->Animation is similar to transition property and difference between them is for transtion we have to use hover to work with transition 
+  and for animation it animates automatically and stops and we can we use infinte value to animate infinite time. and for transition it will works when we hover an
+  element
+  
+  button{
+    background-color:green;
+    animation-name:<name>;
+    animation-duration:4s;
+    animation-interaction-count:4; --we can give infinite value also.
+  }
+  
+  @keyframes <name>{
+    0%{
+       background-color:pink;
+       transform:translateX(23px);
+    }
+    20%{
+      background-color:yellow;
+      transform:translateX(53px);
+    }
+    100%{
+      background-color:blue;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
