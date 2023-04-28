@@ -89,7 +89,14 @@ TRANSFORM,TRANSITION,ANIMATION
       background-color:blue;
     }
   }
-
+  
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+->Animation
+ ->Animation-fill-mode: specifies a style for an element after animation is completed.
+ eg: animation-fill-mode:forwards; i.e; It sets to the last key frame value.
+     animation-fill-mode:backwards; i.e; It sets to the first key frame value.
+     animation-fill-mode:none; -->It is default value.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
